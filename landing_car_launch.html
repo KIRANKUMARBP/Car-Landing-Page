@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>LAMBORGHINI AVENTADOR</title>
+</head>
+<style>
+     .marquee {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .marquee p {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+</style>
+<body>
+    <nav>
+        <div class="px-2 bg-black h-12 hover:bg-slate-900 flex justify-end space-x-32">
+            <img src="Images/logo.jpg" class="h-12 hover:bg-orange-700" alt="" srcset="">
+           <img src="Images/Lamborghini_Logo.svg.png " class="  h-12 " alt="" srcset="">
+            <ul class="px-28 py-2 mx-3 text-white flex space-x-4 justify-end">
+                
+                <li class="cursor-pointer hover:bg-black hover:text-white rounded-full hover:delay-200 font-serif text-orange-700	color: rgb(194 65 12); ">Home</li>
+                <li class="cursor-pointer hover:bg-black hover:text-white rounded-full hover:delay-200 font-serif text-orange-700	color: rgb(194 65 12);">About</li>
+                <li class="cursor-pointer hover:bg-black hover:text-white rounded-full hover:delay-200 font-serif text-orange-700	color: rgb(194 65 12);">Contact us</li>
+                <li class="cursor-pointer hover:bg-black hover:text-white rounded-full hover:delay-200 font-serif text-orange-700	color: rgb(194 65 12);">Reviews</li>
+                <li class="cursor-pointer hover:bg-black hover:text-white rounded-full hover:delay-200 font-serif text-orange-700	color: rgb(194 65 12);">Our cars</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="relative w-full h-full">
+        <img src="Images/vlcsnap-2023-03-17-16h18m30s840.jpg" class="w-full h-full object-cover" alt="">
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-cyan-100">
+            <h1 class="text-5xl font-bold bg-opacity-50">LAMBORGHINI AVENTADOR</h1>
+            <div class="marquee mt-2 text-lg">
+            <p class="mt-2 text-lg ">6.6L V8 32V DDI OHV Turbo Diesel 5-Speed Automatic, Fuel Type: Diesel, Color: Orange</p>
+            </div>
+            <button class="mt-4 px-4 py-2 cursor-pointer bg-black hover:bg-black hover:text-white hover:delay-200 font-serif text-orange-700	color: rgb(194 65 12); rounded">Buy Now</button>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>
